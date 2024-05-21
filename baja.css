@@ -1,0 +1,107 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.background_section {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-image: url(https://images.pexels.com/photos/4609210/pexels-photo-4609210.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+
+  transition: 2.5s;
+  animation-name: animate;
+  animation-direction: normal;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+  animation-duration: 17.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+}
+
+.content h1 {
+  color: #fff;
+  font-size: 5rem;
+  font-family: "Nunito";
+  letter-spacing: 5px;
+  line-height: 0.6em;
+}
+
+.content h1 span {
+  font-size: 1.5rem;
+}
+
+.content a {
+  background: #66acc7;
+  color: #fff;
+  padding: 10px 24px;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 20px;
+}
+
+.content a:hover {
+  background: #87ceeb;
+  color: #fff;
+}
+
+@keyframes animate {
+  0% {
+    background-image: url(https://images.pexels.com/photos/4609210/pexels-photo-4609210.jpeg);
+  }
+
+  50% {
+    background-image: url(https://images.pexels.com/photos/8448325/pexels-photo-8448325.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  }
+  75% {
+    background-image: url(https://images.squarespace-cdn.com/content/v1/5ea156943ffbd834bcead80a/1632649114753-XRHO7NTYVYLMYTB3UJQH/Steps.jpg);
+  }
+
+  100% {
+    background-image: url(https://images.pexels.com/photos/4609210/pexels-photo-4609210.jpeg);
+  }
+}
+@media only screen and (max-width: 455px) {
+  .content h1 {
+    font-size: 3rem;
+  }
+  .content h1 span {
+    font-size: 1.25rem;
+  }
+  .content a {
+    font-size: 0.8rem;
+    padding: 7.5px 15px;
+  }
+  @media only screen and (max-width: 395px) {
+    .content h1 {
+      font-size: 2.5rem;
+    }
+    .content h1 span {
+      font-size: 1rem;
+    }
+    .content a {
+      font-size: 0.5rem;
+      padding: 5px 10px;
+    }
+  }
+}
